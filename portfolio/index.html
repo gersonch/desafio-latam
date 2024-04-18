@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Curriculum-vitae/img/icons8-código-64.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor-header">
+            <nav>
+                <a href="https://www.instagram.com/gerssoonn/" target="_blank"><img src="https://scontent.fccp1-1.fna.fbcdn.net/v/t39.30808-6/336757211_511331227830472_7651298957631104294_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFwmsWJlFny8wPY5rt_zYPcALMiXAC2FO4AsyJcALYU7oeBxW4Oc_kX7Tk1mkHf7Ik&_nc_ohc=nNCHQN5DkKcAb7ENhoS&_nc_ht=scontent.fccp1-1.fna&oh=00_AfBq_X8TeBP06c3mmBeSxtMKjp9qoNXsy7Nbavsx2FtlrA&oe=662081E3" alt="perfil-Gerson"></a>
+                <div class="nombre">
+                    <h1>Gerson Contreras</h1>
+                    <h4>Portfolio </h4>
+                </div>
+                
+                <button href="/Curriculum-vitae/index.html" class="btn-header" id="btn">Curriculum Vitae</button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="tabla-container">
+        <div class="tabla">
+            <table>
+                <tr>
+                    <td>Curriculum vitae</td>
+                    <td><a href="/Curriculum-vitae/index.html" target="_blank"><img src="/desafio-latam/Curriculum-vitae/img/Captura de pantalla 2024-04-13 171116.png"  alt="CV" ></a></td>
+                </tr>
+                <tr>
+                    <td>proyecto 2</td>
+                </tr>
+                <tr>
+                    <td>proyecto 3</td>
+                </tr>
+                    
+            </table>
+        </div>
+    </div>
+
+
+
+
+    <script>
+        const $btnHeader = document.querySelector("#btn");
+        const $btn = document.querySelector(".btn-display")
+
+        function onclick(){
+            window.open("/curriculum-vitae/index.html", "_blank")
+            
+        }
+        function displays(){
+            document.getElementById("content").style.display ='grid'
+        }
+
+        $btnHeader.addEventListener('click', onclick)
+        $btn.addEventListener('click', displays)
+
+    </script>
+</body>
+</html>

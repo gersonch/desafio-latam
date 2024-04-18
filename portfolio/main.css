@@ -1,0 +1,108 @@
+:root{
+    --clr-black: #2A363B;
+    --clr-red: #E84A5F;
+    --clr-pink: #FF847C;
+    --clr-yellow: #FECEA8;
+    --clr-green: #99B898; 
+ }
+ 
+ *{
+     margin: 0;
+     box-sizing: border-box;
+     font-family: monospace;
+ }
+ body{
+     min-height: 100vh;
+     background-color: var(--clr-black);
+     color: white;
+     
+ }
+ header{
+     min-width: 100%;
+     background-color: var(--clr-green);
+     box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+ }
+ .contenedor-header{
+     max-width: 1000px;
+     margin: 0 auto;
+ }
+ nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 2rem;
+     flex-wrap: wrap;
+ }
+ nav img{
+     width: 4rem;
+     border-radius: 100%;
+     cursor: pointer;
+     box-shadow: 0 0 2rem var(--clr-black);
+     transition: .3s;
+ }
+ nav img:hover{
+     scale: 1.1;
+     box-shadow: 0 0 2rem var(--clr-black);
+ }
+ 
+ .btn-header{
+     text-decoration: none;
+     padding:1rem;
+     color:white;
+     background-color: var(--clr-black);
+     border:none;
+     border-radius: 100vmax;
+     cursor: pointer;
+     box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+     transition: .3s;
+ }
+ .btn-header:hover{
+     scale: 1.1;
+     box-shadow: 0 0 2rem var(--clr-black);
+ }
+ 
+ .nombre{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ .nombre h4{
+     font-weight: 600;
+     opacity: .5;
+ }
+.tabla-container{
+    display: flex;
+    justify-content: center;
+    padding-block: 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    
+}
+ table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid black;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .5);
+    
+ }
+tr{
+    border: 1px solid black;
+    padding: 1rem;
+}
+td{
+    padding: 1rem;
+    border: 1px solid black;
+    text-align: center;
+}
+td img{
+    width: 100%;
+    max-width: 20rem;
+    border: 1px solid var(--clr-yellow);
+    box-shadow: 0 0 2rem -1rem var(--clr-yellow);
+    transition: .3s;
+}
+td img:hover{
+    scale: 1.1;
+}
