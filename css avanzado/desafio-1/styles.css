@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  display: flex;
+}
+.left {
+  width: 30%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.user-img {
+  width: 100%;
+  max-width: 4rem;
+  height: 100%;
+  max-height: 5rem;
+  border-radius: 100%;
+}
+
+/*hero*/
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hero-elements {
+  display: flex;
+  gap: 1rem;
+}
+
+.texto-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  width: 6rem;
+}
+
+.status {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+i {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*btn*/
+.btn {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn button {
+  border: none;
+  padding: 1rem;
+  width: 200px;
+  color: aliceblue;
+  background-color: rgb(158, 108, 205);
+  transition: 0.1s;
+}
+.btn i {
+  color: aliceblue;
+}
+
+/*users*/
+
+.user {
+  display: flex;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.user-img:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgb(126, 86, 162);
+}
+
+.user:hover {
+  cursor: pointer;
+  background-color: rgb(235, 235, 235);
+}
+
+.estado {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/*lado derecho*/
+.right {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: rgb(255, 252, 247);
+}
+
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hand img {
+  width: 100%;
+  max-width: 25rem;
+}
