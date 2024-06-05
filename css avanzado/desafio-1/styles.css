@@ -185,17 +185,13 @@ bold {
   .chat {
     font-size: 0.8rem;
   }
-  .texto-user {
-    display: none;
-  }
+  .texto-btn,
+  .texto-user,
   .texto-hero,
   .hero-icons {
     display: none;
   }
   .left {
     width: 20%;
-  }
-  .texto-btn {
-    display: none;
   }
 }
