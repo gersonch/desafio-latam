@@ -17,6 +17,8 @@
   flex-direction: column;
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   background-color: rgb(255, 255, 255);
+  overflow: scroll;
+  scrollbar-width: none;
 }
 .user-img {
   width: 100%;
@@ -32,6 +34,7 @@
   align-items: center;
   padding: 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 
 .hero-elements {
@@ -48,6 +51,7 @@
 }
 
 .status {
+  display: block;
   color: rgba(0, 0, 0, 0.5);
   display: flex;
   gap: 0.2rem;
@@ -80,6 +84,7 @@ i {
   padding: 2rem;
   gap: 2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
 }
 
 .btn button {
@@ -103,6 +108,7 @@ i {
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+  overflow: hidden;
 }
 .name {
   display: flex;
@@ -143,6 +149,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 .hand img {
   width: 100%;
@@ -150,4 +157,31 @@ button:hover {
 }
 bold {
   font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) {
+  .hand img {
+    width: 70%;
+  }
+  .left {
+    width: 40%;
+  }
+  .right {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .hand img {
+    width: 70%;
+  }
+  .left {
+    width: 60%;
+  }
+  .right {
+    width: 40%;
+  }
+  .chat {
+    font-size: 0.8rem;
+  }
 }
