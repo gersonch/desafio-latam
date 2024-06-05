@@ -40,6 +40,7 @@
 .hero-elements {
   display: flex;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .texto-hero {
@@ -56,14 +57,25 @@
   display: flex;
   gap: 0.2rem;
   align-items: center;
+  position: relative;
+}
+.status-icon-green-hero {
+  color: rgb(0, 184, 0);
+  font-size: 0.7rem;
 }
 .status-icon-green {
-  color: green;
-  font-size: 0.6rem;
+  color: rgb(0, 184, 0);
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 20%;
+  left: 80%;
 }
 .status-icon-gray {
   color: gray;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 20%;
+  left: 80%;
 }
 
 .hero-icons {
@@ -116,8 +128,9 @@ i {
   gap: 0.2rem;
 }
 
-.user-img:hover {
+.imagen-user {
   cursor: pointer;
+  position: relative;
 }
 
 button:hover {
@@ -164,24 +177,25 @@ bold {
     width: 70%;
   }
   .left {
-    width: 40%;
-  }
-  .right {
-    width: 60%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 780px) {
-  .hand img {
-    width: 70%;
-  }
-  .left {
-    width: 60%;
-  }
-  .right {
-    width: 40%;
-  }
   .chat {
     font-size: 0.8rem;
+  }
+  .texto-user {
+    display: none;
+  }
+  .texto-hero,
+  .hero-icons {
+    display: none;
+  }
+  .left {
+    width: 20%;
+  }
+  .texto-btn {
+    display: none;
   }
 }
