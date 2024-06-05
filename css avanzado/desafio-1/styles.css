@@ -44,11 +44,22 @@
   flex-direction: column;
   justify-content: center;
   justify-content: center;
-  width: 6rem;
+  width: 10rem;
 }
 
 .status {
   color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  gap: 0.2rem;
+  align-items: center;
+}
+.status-icon-green {
+  color: green;
+  font-size: 0.6rem;
+}
+.status-icon-gray {
+  color: gray;
+  font-size: 0.6rem;
 }
 
 .hero-icons {
@@ -92,6 +103,11 @@ i {
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+}
+.name {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
 }
 
 .user-img:hover {
