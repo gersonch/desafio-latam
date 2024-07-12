@@ -18,4 +18,9 @@ function sumar() {
 function restar() {
   cantidadCompras.innerText = --cantidad;
   valorTotal.innerText = operacion();
+  if (cantidad <= 0) {
+    cantidad = 0;
+    valorTotal.innerHTML = "";
+    cantidadCompras.innerHTML = "0";
+  }
 }
