@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+
+.stickers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticker-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.btn-enviar {
+  border: none;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.btn-enviar:hover {
+  cursor: pointer;
+  background-color: rgb(142, 142, 142);
+}
