@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Cuatro divs de colores con estilos en línea -->
+    <div
+      id="div1"
+      style="width: 200px; height: 200px; background-color: blue"
+    ></div>
+    <div
+      id="div2"
+      style="width: 200px; height: 200px; background-color: red"
+    ></div>
+    <div
+      id="div3"
+      style="width: 200px; height: 200px; background-color: green"
+    ></div>
+    <div
+      id="div4"
+      style="width: 200px; height: 200px; background-color: yellow"
+    ></div>
+
+    <!-- Div para el evento de teclas -->
+    <div
+      id="key"
+      style="
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border: 1px solid black;
+        margin-top: 20px;
+      "
+    ></div>
+
+    <script>
+      let globalColor = "";
+
+      function updateColor(color) {
+        const box = document.createElement("div");
+        box.style.width = "200px";
+        box.style.height = "200px";
+        box.style.backgroundColor = color;
+        box.style.border = "1px solid black";
+        box.style.marginTop = "20px";
+        document.body.appendChild(box);
+      }
+
+      document.addEventListener("keydown", function (event) {
+        const targetBox = document.getElementById("key");
+
+        if (event.key === "a") {
+          globalColor = "pink";
+          targetBox.style.backgroundColor = globalColor;
+        } else if (event.key === "s") {
+          globalColor = "orange";
+          targetBox.style.backgroundColor = globalColor;
+        } else if (event.key === "d") {
+          globalColor = "lightblue";
+          targetBox.style.backgroundColor = globalColor;
+        } else if (event.key === "q") {
+          updateColor("purple");
+        } else if (event.key === "w") {
+          updateColor("gray");
+        } else if (event.key === "e") {
+          updateColor("brown");
+        }
+      });
+
+      function changeBgToBlack(event) {
+        event.target.style.backgroundColor = "black";
+      }
+
+      document
+        .getElementById("div1")
+        .addEventListener("click", changeBgToBlack);
+      document
+        .getElementById("div2")
+        .addEventListener("click", changeBgToBlack);
+      document
+        .getElementById("div3")
+        .addEventListener("click", changeBgToBlack);
+      document
+        .getElementById("div4")
+        .addEventListener("click", changeBgToBlack);
+    </script>
+  </body>
+</html>
