@@ -3,15 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historial de Moneda</title>
+    <title>Conversor de Moneda</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="script.js"></script>
 </head>
 <body>
-    <h1>Historial de Moneda</h1>
-    <canvas id="currencyChart" width="400" height="200"></canvas>
+    <h1>Conversor de Moneda</h1>
+    <main>
+        <form onsubmit="return false;"> <!-- Prevenir el envío del formulario -->
+            <label>Pesos
+                <input id="valorUsuario" type="number" placeholder="Ingresa un numero">
+            </label>
+            <label>
+                <select name="moneda" id="moneda" class="moneda"> <!-- Agregado id="moneda" -->
+                    <option value="dolar">Dolar</option>
+                    <option value="euro">Euro</option>
+                </select>
+            </label>
+            <button type="button" onclick="convertir()">Convertir</button> <!-- Cambiar a type="button" -->
+        </form>
+        <span id="resultado"></span>
+    </main>
 
-    <!-- Incluir el script aquí o en un archivo separado -->
     <script src="script.js"></script>
 </body>
 </html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    main{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-block: 2rem;
+        gap: 1rem;
+        
+    }
+    .moneda{
+        padding-inline: 2rem;
+        padding-block: .3rem;
+        cursor: pointer;
+    }
+
+    button{
+        padding-inline: 2rem;
+        padding-block: .3rem;
+        border: none;
+        transition: .1s;
+        cursor: pointer;
+        
+    }
+    button:hover{
+            transform: scale(1.05);
+        }
+
+</style>
